@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="szornyek">
+    <meta name="description" content="szornyek">
+    <meta name="author" content="Kiss Virág">
+    <link rel="stylesheet" href="style.css">
+    <title>Kiss Virág</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Fogadj örökbe egy szörnyet!</h1>
+        </header>
+
+         <nav>
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="index.html">Minden otthont kereső szörny</a></li>
+                <li><a href="#">Fiú szörnyek</a></li>
+                <li><a href="#">Lány szörnyek</a></li>
+                <li><a href="urlap.html">Töltse ki az űrlapot!</a></li>
+            </ul>
+        </nav>
+
+        <article>
+             <form >
+                <fieldset>
+                    <legend>Adatok</legend>
+                
+                    <div class="nev">
+                        <label for="nev">Szörny neve: </label>
+                        <input type="text" id="nev" name="nev" placeholder="Keresztnév">
+                    </div>
+
+                    <br>
+
+                    <div class="email">
+                        <label for="email">Örökbefogadó email-je: </label>
+                        <input type="email" name="email" id="email" placeholder="email@gmail.com">
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="nem">
+                    <legend>Szörny neme</legend>
+                
+                    <div class="nem">
+                        <input type="radio" id="nem" name="nem" value="nem">
+                        <label for="nem">Férfi </label>
+                    </div>
+
+                    <br>
+
+                    <div class="nem">
+                        <input type="radio" id="nem" name="nem" value="nem">
+                        <label for="nem">Nő</label>
+                    </div>
+                
+                </fieldset>
+
+                <fieldset class="lokacio">
+                    <legend>Lokáció</legend>
+                    
+                    <label for="orszag">Válaszd ki az országodat: </label>
+                    <select name="orszag" id="orszag">
+                        <option value="" disabled selected> Kérjük, válassz!</option>
+                        <option value="hu">Magyarország</option>
+                        <option value="IT">Olaszország</option>
+                        <option value="SW">Svájc</option>
+                        <option value="AT">Ausztria</option>
+                        <option value="DE">Németország</option>
+                        <option value="RO">Románia</option>
+                        <option value="SK">Szlovákia</option>
+                    </select>
+
+                </fieldset>
+
+                <fieldset>
+                    <label for="review">Visszajelzés:</label><br>
+                    <textarea id="review" name="review" rows="4" cols="50">
+                    </textarea>
+                </fieldset>
+                
+                <div class="submit">
+                    <input type="submit" value="Küldés">
+                </div>
+            </form>
+        </article>
+    </main>
+</body>
+</html>
